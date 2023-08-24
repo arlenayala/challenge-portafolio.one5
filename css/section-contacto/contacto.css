@@ -1,0 +1,139 @@
+.contactos {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactos__titulo {
+    font-size: 1.375rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0.625rem;
+}
+
+.contactos__descripcion-1 {
+    font-size: .875rem;
+    margin-bottom: 0.625rem;
+}
+
+.contactos__descripcion-2 {
+    font-size: .875rem;
+    margin-bottom: 0.625rem;
+}
+
+.contactos__imagen {
+    background: no-repeat center cover;
+   
+}
+
+.contactos__informacion {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.contactos__informacion-input {
+    margin-bottom: 0.625rem;
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 5px;
+    border:none
+    
+}
+
+.contactos__informacion-enviar {
+    font-size: .875rem;
+    font-weight: bold;
+    padding: .625rem .625rem;
+    width: 40%;
+    background: #fff; 
+    color: #4741d7;
+    border: 2px solid #4741d7;
+    padding:.625rem;
+    margin: 5px;
+    border-radius: 3px; 
+    cursor: pointer;
+     position: relative;
+    z-index: 1;
+   overflow: hidden;
+   display: inline-block;
+    
+}
+
+.contactos__informacion-enviar:hover {
+    color: #805353; 
+    transform: scale(1.1);
+  }
+  .contactos__informacion-enviar::after {
+    content: "";
+    background: #fff; 
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  .contactos__informacion-enviar::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+@media screen and (max-width:768px) {
+    .contactos {
+        display: flex;
+        align-items: center;
+    }
+
+    .contactos__imagen {
+        display: none;
+  
+    }
+
+    .contactos__informacion-enviar {
+        width: 96%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .contactos__titulo {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 2.25rem;
+    }
+
+    .contactos__descripcion-1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .contactos__descripcion-2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2.25rem;
+    }
+    .contactos__informacion {
+        margin-left: 1.25rem;
+    }
+   
+    .contactos__contacto {
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .contactos__informacion-enviar {
+        width: 100%;
+    }
+
+}
+

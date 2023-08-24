@@ -1,0 +1,28 @@
+.rodapie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodapie__desarrollado {
+    font-size: .875rem;
+    font-weight: bold;
+}
+
+.rodapie__anho {
+    font-size: .875rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+   
+    .rodapie__desarrollado {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+    .rodapie__anho {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}

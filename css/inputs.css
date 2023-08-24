@@ -1,0 +1,24 @@
+/* Asegúrate de agregar la clase "error" para mostrar el borde rojo en el campo de entrada */
+.contactos__informacion-input--invalid .contactos__informacion-input,
+.contactos__informacion-input.error {
+  border: 5px solid var(--boton-rojo);
+  border-radius: 7px;
+  
+}
+
+/* Muestra el mensaje de error */
+.contacto-message-error {
+  display: none;
+  color: var(--warning-color);
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+  color: var(--warning-color);
+}
+
+/* Muestra el mensaje de error en el campo de entrada con la clase "error" */
+.contactos__informacion-input.error .contacto-message-error {
+  display: block;
+}
+
+
+

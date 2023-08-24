@@ -1,0 +1,64 @@
+
+
+.hobby__titulo {
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hobby__lista {
+    display: flex;
+    flex-wrap: wrap;
+  
+   
+}
+
+.hobby__lista-items {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+    margin-right: 6px;
+   padding: 1px 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #4741d7;
+    font-size: 4.5vw;
+    font-weight: bold;
+}
+
+.hobby__lista-items--titulo {
+    font-size: 1.375rem;
+    margin: 5px;
+}
+
+.hobby__lista-items--imagen {
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    .hobby__lista {
+
+    display: flex;
+    flex-wrap: wrap;
+    
+    }
+
+    .hobby__lista-items {
+        flex-basis: calc(33.3% - 10px);
+        margin-bottom: .625rem;
+    }
+
+    .hobby__titulo {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .hobby__lista-items--titulo {
+        font-size: 2rem;
+        margin: 5px;
+    }
+    
+}
